@@ -84,7 +84,13 @@ header .logo{
 header .logo span{
     text-transform: uppercase;
     color:var(--main-color);
+
 }
+header .logo span:hover{
+    font-size: 4rem;
+    color:var(--main-color);
+}
+
 
 header .navbar a{
     display: block; 
@@ -121,6 +127,7 @@ header .follow a:hover{
     font-size: 3rem;
     cursor:pointer;
     display: none;
+   
 }
 
 
@@ -136,16 +143,19 @@ header .follow a:hover{
     flex:1 1 40rem;
     border-radius: 50%;
 }
-.home .image:hover{
-    height:75%;
-    width:75%;
-}
 
 
 .home .image img{
     left: 30%;
     width:100%;
+    border-radius: 50%;
+    filter: drop-shadow(0px 30px 15px rgba(0,0,0,.4));
 }
+.home .image img:hover{
+    box-sizing: border-box;
+    border-radius: 25%;
+}
+
 
 .home .content{
     flex:1 1 40rem;
@@ -154,6 +164,7 @@ header .follow a:hover{
 .home .content .hi{
     font-size: 2rem;
     color:var(--main-color);
+  
 }
 
 .home .content h3{
@@ -165,6 +176,7 @@ header .follow a:hover{
 .home .content h3 span{
     color:var(--main-color);
     text-transform: none;
+    filter: drop-shadow(0px 10px 10px var(--main-color) );
 }
 
 .home .content .info{
@@ -500,6 +512,7 @@ header .follow a:hover{
 .contact .icons-container .icons p{
     color:#666;
     font-size: 1.7rem;
+    text-transform: none;
 }
 
     .contact .row{
