@@ -245,7 +245,8 @@ header .follow a:hover{
 }
 
 .about .row-1 .content .box-container .box span{
-    color:var(--main-color);
+/*     color:var(--main-color); */
+     color: white;
 }
 
 
