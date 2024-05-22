@@ -182,7 +182,7 @@ header .follow a:hover{
 .home .content .info{
     font-family: monospace;
     font-size: 2.5rem;
-    color:#111;
+    color:#000000;
     padding:.5rem 0;
 }
 
@@ -228,7 +228,7 @@ header .follow a:hover{
 }
 
 .about .row-1 .content p{
-    color:#666;
+    color:#000000;
     font-size: 1.6rem;
     padding:.5rem 0;
 }
@@ -277,13 +277,13 @@ header .follow a:hover{
 }
 
 .service .box-container .box h3{
-    color:#444;
+    color:#000000;
     font-size: 2.2rem;
     padding-top: 1rem;
 }
 
 .service .box-container .box p{
-    color:#666;
+    color:#000000;
     font-size: 1.7rem;
     padding-top: .5rem;
 }
@@ -331,12 +331,12 @@ header .follow a:hover{
 .experience .box-container .box .content h3{
     font-size: 2.5rem;
     padding:.5rem 0;
-    color:#111;
+    color:#000000;
 }
 
 .experience .box-container .box .content p{
     font-size: 1.5rem;
-    color:#666;
+    color:#000000;
 }
 
 .portfolio .box-container{
@@ -391,7 +391,7 @@ header .follow a:hover{
     width:4rem;
     border-radius: .5rem;
     background: #eee;
-    color:#333;
+    color:#000000;
     font-size: 1.7rem;
     line-height: 4rem;
     text-align: center;
@@ -431,14 +431,14 @@ header .follow a:hover{
 }
 
 .contact .icons-container .icons h3{
-    color:#111;
+    color:#000000;
     font-size: 2rem;
     padding:.5rem 0;
     padding-top: 1rem;
 }
 
 .contact .icons-container .icons p{
-    color:#666;
+    color:#0b0808;
     font-size: 1.7rem;
     text-transform: none;
 }
@@ -478,7 +478,7 @@ header .follow a:hover{
         border-color:rgb(0, 113, 15) ;
         border-radius: 1rem;
         box-sizing: content-box;
-        color:#333;
+        color:#000000;
         text-transform: none;
         font-size: 1.7rem;
         padding:1rem 0;
