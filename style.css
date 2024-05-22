@@ -446,8 +446,10 @@ header .follow a:hover{
     .contact .row{
         display: flex;
         flex-wrap: wrap;
-        gap:1.5rem;
+        gap:2rem;
+        margin-top: 15px;
     }
+
 
 .contact .row form{
     
