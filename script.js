@@ -110,3 +110,27 @@ btn.addEventListener('click',function(e){
 })
 
 
+
+// Function to update visit count
+function updateVisitCount() {
+    let count = localStorage.getItem('visitCount');
+
+    // If there's no count in local storage, set it to 0
+    if (!count) {
+        count = 0;
+    }
+
+    // Increment the count
+    count++;
+
+    // Store the new count in local storage
+    localStorage.setItem('visitCount', count);
+
+    // Update the display
+    document.getElementById('count').innerText = count;
+}
+
+// Call the function when the page loads
+window.onload = updateVisitCount;
+
+
