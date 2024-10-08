@@ -640,3 +640,15 @@ right: 5px;
 
 }
 
+
+.visit-count {
+    text-align: center; /* Center the visit count */
+    margin: 20px 0;    /* Add some margin */
+}
+
+.visit-count h3 {
+    font-size: 1.5rem; /* Adjust font size */
+    color: #333;       /* Change color */
+}
+
+
