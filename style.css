@@ -14,7 +14,73 @@
     /* transition: all .2s linear; */
     line-height: 1.5;
 }
+/* 
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  z-index: 9999;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
+} */
 
+
+/* .loader.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader span {
+  display: block;
+  width: 5px;
+  height: 50px;
+  background: #999;
+  margin: 0 2px;
+  animation: loader 1s infinite ease-in-out;
+} */
+/* 
+.loader span:last-child {
+  margin-right: 0px;
+} */
+
+/* .loader span:nth-child(1) { animation: load 2.5s 1.4s infinite linear; }
+.loader span:nth-child(2) { animation: load 2.5s 1.2s infinite linear; }
+.loader span:nth-child(3) { animation: load 2.5s 1s infinite linear; }
+.loader span:nth-child(4) { animation: load 2.5s 0.8s infinite linear; }
+.loader span:nth-child(5) { animation: load 2.5s 0.6s infinite linear; }
+.loader span:nth-child(6) { animation: load 2.5s 0.4s infinite linear; }
+.loader span:nth-child(7) { animation: load 2.5s 0.2s infinite linear; }
+.loader span:nth-child(8) { animation: load 2.5s 0s infinite linear; }
+.loader span:nth-child(9) { animation: load 2.5s 0.2s infinite linear; }
+.loader span:nth-child(10) { animation: load 2.5s 0.4s infinite linear; }
+.loader span:nth-child(11) { animation: load 2.5s 0.6s infinite linear; }
+.loader span:nth-child(12) { animation: load 2.5s 0.8s infinite linear; }
+.loader span:nth-child(13) { animation: load 2.5s 1s infinite linear; }
+.loader span:nth-child(14) { animation: load 2.5s 1.2s infinite linear; }
+.loader span:nth-child(15) { animation: load 2.5s 1.4s infinite linear; }
+
+@keyframes load {
+  0% {
+    background: #ccc;
+    margin-top: 25%;
+    height: 10%;
+  }
+  50% {
+    background: #444;
+    height: 100%;
+    margin-top: 0%;
+  }
+  100% {
+    background: #ccc;
+    height: 10%;
+    margin-top: 25%;
+  }
+} */
 html{
     font-size: 62.5%;
     overflow-x: hidden;
@@ -30,7 +96,8 @@ body{
 
 section{
     padding:1rem 5%;
-    min-height: 100vh;
+    /* min-height: 100vh; */
+    min-height: 55vh;
 }
 
 .heading{
@@ -380,7 +447,7 @@ header .follow a:hover{
 }
 
 .portfolio .box-container .box{
-    flex:1 1 40rem;
+    flex:1 1 35rem;
     height:25rem;
     position: relative;
     /* overflow:hidden; */
@@ -576,7 +643,17 @@ right: 5px;
 
 
 
+@media (max-width: 991px) {
+  .portfolio .box-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablet */
+  }
+}
 
+@media (max-width: 600px) {
+  .portfolio .box-container {
+    grid-template-columns: 1fr; /* 1 column on mobile */
+  }
+}
 
 
 
@@ -650,4 +727,12 @@ right: 5px;
     color: #333;       /* Change color */
 }
 
+/* #main-content {
+  display: none;  
+  opacity: 0;
+  transition: opacity 1s ease;
+}
 
+#main-content.visible {
+  opacity: 1;
+} */
