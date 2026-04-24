@@ -1,15 +1,15 @@
 // --- 1. Dynamic Typing Effect (Home Section) ---
-const roles = ['Web Developer', 'Designer', 'Digital Marketing '];
+const roles = ['FullStack Developer ', 'Web Developer', 'Designer'];
 let currentIndex = 0;
 let charIndex = 0;
 const typingSpeed = 120;
 const erasingSpeed = 100;
-const delayBetweenRoles = 1500; 
+const delayBetweenRoles = 1500;
 
 function typeRole() {
     const dynamicText = document.getElementById('dynamic-text');
     const currentRole = roles[currentIndex];
-    
+
     if (charIndex < currentRole.length) {
         dynamicText.textContent += currentRole.charAt(charIndex);
         charIndex++;
@@ -36,7 +36,7 @@ function eraseRole() {
 // Start the typing effect when the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', () => {
     // Initial delay before the first word appears
-    setTimeout(typeRole, 500); 
+    setTimeout(typeRole, 500);
 });
 
 
@@ -58,7 +58,7 @@ if (menu) { // Check if the menu icon exists
 
 // Close menu when a navigation link is clicked (UX improvement for mobile)
 navbarLinks.forEach(link => {
-    link.addEventListener('click', toggleMenu); 
+    link.addEventListener('click', toggleMenu);
 });
 
 // Close menu on scroll
@@ -71,17 +71,17 @@ window.addEventListener('scroll', () => {
 // --- 3. Visit Counter (Requires 'count' element in HTML) ---
 function updateVisitCount() {
     const countDisplay = document.getElementById('count');
-    
+
     if (!countDisplay) {
         console.warn("Visit count element with ID 'count' not found. Skipping visit count update.");
-        return; 
+        return;
     }
 
     let count = localStorage.getItem('visitCount');
 
     // Initialize or increment the count
     // The counter is now initialized to 0 and counts the current page load as +1
-    count = count ? parseInt(count) + 1 : 1; 
+    count = count ? parseInt(count) + 1 : 1;
 
     // Store the new count in local storage
     localStorage.setItem('visitCount', count);
@@ -94,9 +94,9 @@ function updateVisitCount() {
 window.addEventListener('load', updateVisitCount);
 
 // --- 4. Custom Cursor Logic (Removed non-functional/commented out code) ---
-/* The event listeners for 'a' links have been removed as the necessary 
-   cursor HTML elements ('.cursor-1', '.cursor-2') are not present in the HTML 
-   and the logic was non-functional/commented out in the original. 
+/* The event listeners for 'a' links have been removed as the necessary
+   cursor HTML elements ('.cursor-1', '.cursor-2') are not present in the HTML
+   and the logic was non-functional/commented out in the original.
 */
 
 // --- 5. Form Submission Logic (No JS needed for Formspree) ---
